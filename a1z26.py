@@ -7,18 +7,12 @@ def encode(text: str):
     result = []
     for letter in clean:
         result.append(str(alphabet.find(letter) + 1))
-    return '-'.join(result)
+    return ' '.join(result)
 
 def decode(text: str):
-    textLi = text.split('-')
+    textLi = text.split(' ')
     result = ''
     for num in textLi:
         i = int(num) - 1
         result += alphabet[i]
     return result
-
-texto = 'teste muito foda!'
-cript = encode(texto)
-decript = decode(cript)
-
-print(f'{texto}\n{cript}\n{decript}')

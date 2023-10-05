@@ -10,7 +10,6 @@ def encode(text: str):
         y = rowIndex + 1
         x = alphabet[rowIndex].index(letter) + 1
         result.append(f'{y},{x}')
-    
     return ' '.join(result)
 
 def decode(text: str):
@@ -22,9 +21,3 @@ def decode(text: str):
         x = int(iCoord[1]) - 1
         result += alphabet[y][x]
     return result
-
-teste = 'abc'
-c = encode(teste)
-d = decode(c)
-
-print(f'{teste}\n{c}\n{d}')

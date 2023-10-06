@@ -1,4 +1,4 @@
-# toCode
+# toCiph
 
 trying to create function that encode and decode strings with simple cyphers using python
 
